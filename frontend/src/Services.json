@@ -1,0 +1,697 @@
+[
+
+  {
+    "serviceId": "svc-1-1",
+    "vendorId": 1,
+    "serviceCategory": "cleaning",
+    "title": "Basic Home Cleaning",
+    "price": 1200,
+    "billingType": "per service",
+    "overview": "Basic cleaning suitable for small apartments.",
+    "workProcess": [
+      "Room inspection",
+      "Dusting and sweeping",
+      "Washroom surface cleaning",
+      "Final quality check"
+    ],
+    "manpower": 1,
+    "timeRange": "2 hours",
+    "tools": ["Vacuum cleaner", "Eco-friendly chemicals"],
+    "safetyMeasures": ["Gloves", "Mask"],
+    "terms": "Extra services charged separately."
+  },
+  {
+    "serviceId": "svc-1-2",
+    "vendorId": 1,
+    "serviceCategory": "cleaning",
+    "title": "Deep Cleaning Service",
+    "price": 3200,
+    "billingType": "per service",
+    "overview": "Deep cleaning including kitchen and washrooms.",
+    "workProcess": [
+      "Full house inspection",
+      "Kitchen degreasing",
+      "Washroom deep cleaning",
+      "Floor scrubbing"
+    ],
+    "manpower": 2,
+    "timeRange": "5 hours",
+    "tools": ["Steam cleaner", "Industrial vacuum"],
+    "safetyMeasures": ["Protective gear"],
+    "terms": "Heavy dirt may require extra time."
+  },
+  {
+    "serviceId": "svc-1-3",
+    "vendorId": 1,
+    "serviceCategory": "cleaning",
+    "title": "Premium Home Care",
+    "price": 5000,
+    "billingType": "per service",
+    "overview": "Complete home cleaning with priority service.",
+    "workProcess": [
+      "Complete room cleaning",
+      "Kitchen & washroom deep clean",
+      "Final inspection"
+    ],
+    "manpower": 3,
+    "timeRange": "6 hours",
+    "tools": ["Premium cleaning tools"],
+    "safetyMeasures": ["Child-safe chemicals"],
+    "terms": "Advance notice required."
+  },
+  {
+    "serviceId": "svc-2-1",
+    "vendorId": 2,
+    "serviceCategory": "technical-services",
+    "title": "Switch & Light Repair",
+    "price": 900,
+    "billingType": "per visit",
+    "overview": "Fixing switches, sockets and lights.",
+    "workProcess": [
+      "Problem inspection",
+      "Repair or replacement",
+      "Safety testing"
+    ],
+    "manpower": 1,
+    "timeRange": "1 hour",
+    "tools": ["Tester", "Screwdriver"],
+    "safetyMeasures": ["Power shutdown"],
+    "terms": "Spare parts charged extra."
+  },
+  {
+    "serviceId": "svc-2-2",
+    "vendorId": 2,
+    "serviceCategory": "technical-services",
+    "title": "House Wiring Check",
+    "price": 2500,
+    "billingType": "per visit",
+    "overview": "Full electrical safety inspection.",
+    "workProcess": [
+      "Wiring inspection",
+      "Load testing",
+      "Safety report"
+    ],
+    "manpower": 2,
+    "timeRange": "3 hours",
+    "tools": ["Voltage tester"],
+    "safetyMeasures": ["Protective gloves"],
+    "terms": "Old wiring issues not guaranteed."
+  },
+  {
+    "serviceId": "svc-2-3",
+    "vendorId": 2,
+    "serviceCategory": "technical-services",
+    "title": "Appliance Installation",
+    "price": 4500,
+    "billingType": "per visit",
+    "overview": "Installation of heavy electrical appliances.",
+    "workProcess": [
+      "Placement setup",
+      "Electrical connection",
+      "Testing"
+    ],
+    "manpower": 2,
+    "timeRange": "2 hours",
+    "tools": ["Drill machine"],
+    "safetyMeasures": ["Grounding check"],
+    "terms": "Warranty depends on appliance."
+  },
+  {
+    "serviceId": "svc-3-1",
+    "vendorId": 3,
+    "serviceCategory": ["technical-services","cleaning"],
+    "title": "Gas Burner Cleaning",
+    "price": 700,
+    "billingType": "per service",
+    "overview": "Cleaning burners for smooth gas flow.",
+    "workProcess": [
+      "Burner removal",
+      "Carbon cleaning",
+      "Reinstallation"
+    ],
+    "manpower": 1,
+    "timeRange": "45 minutes",
+    "tools": ["Cleaning brush"],
+    "safetyMeasures": ["Gas leak check"],
+    "terms": "Cylinder handled by customer."
+  },
+  {
+    "serviceId": "svc-3-2",
+    "vendorId": 3,
+    "serviceCategory": "technical-services",
+    "title": "Gas Stove Repair",
+    "price": 1800,
+    "billingType": "per service",
+    "overview": "Complete diagnosis and repair.",
+    "workProcess": [
+      "Leak detection",
+      "Part replacement",
+      "Safety testing"
+    ],
+    "manpower": 1,
+    "timeRange": "2 hours",
+    "tools": ["Leak detector"],
+    "safetyMeasures": ["Protective gloves"],
+    "terms": "Parts cost extra."
+  },
+  {
+    "serviceId": "svc-3-3",
+    "vendorId": 3,
+    "serviceCategory": ["technical-services","maintenance"],
+    "title": "Annual Gas Maintenance",
+    "price": 3000,
+    "billingType": "per year",
+    "overview": "Yearly gas safety service.",
+    "workProcess": [
+      "Multiple inspections",
+      "Safety upgrades"
+    ],
+    "manpower": 1,
+    "timeRange": "2 visits/year",
+    "tools": ["Inspection tools"],
+    "safetyMeasures": ["Safety compliance"],
+    "terms": "Scheduled visits only."
+  },
+  {
+    "serviceId": "svc-4-1",
+    "vendorId": 4,
+    "serviceCategory": ["technical-services","cleaning"],
+    "title": "AC Cleaning",
+    "price": 1500,
+    "billingType": "per service",
+    "overview": "Regular AC cleaning for better cooling and air quality.",
+    "workProcess": [
+      "Filter removal",
+      "Indoor unit wash",
+      "Dust and mold cleaning",
+      "Performance check"
+    ],
+    "manpower": 1,
+    "timeRange": "1.5 hours",
+    "tools": ["AC cleaning pump", "Cleaning chemicals"],
+    "safetyMeasures": ["Power disconnected", "Protective gloves"],
+    "terms": "Outdoor unit access required."
+  },
+  {
+    "serviceId": "svc-4-2",
+    "vendorId": 4,
+    "serviceCategory": ["technical-services","maintenance"],
+    "title": "AC Gas Refill",
+    "price": 3000,
+    "billingType": "per service",
+    "overview": "Gas refill with leak detection.",
+    "workProcess": [
+      "Leak detection",
+      "Old gas removal",
+      "Gas refill",
+      "Cooling test"
+    ],
+    "manpower": 1,
+    "timeRange": "2 hours",
+    "tools": ["Gas refill kit", "Pressure gauge"],
+    "safetyMeasures": ["Gas safety compliance"],
+    "terms": "Extra gas charged separately."
+  },
+  {
+    "serviceId": "svc-4-3",
+    "vendorId": 4,
+    "serviceCategory": ["technical-services","maintenance","cleaning"],
+    "title": "Complete AC Service",
+    "price": 5500,
+    "billingType": "per service",
+    "overview": "Full AC service including cleaning and gas check.",
+    "workProcess": [
+      "Complete inspection",
+      "Deep cleaning",
+      "Gas check",
+      "Final performance test"
+    ],
+    "manpower": 2,
+    "timeRange": "3 hours",
+    "tools": ["Advanced AC tools"],
+    "safetyMeasures": ["Electrical safety measures"],
+    "terms": "Parts replacement costs extra."
+  },
+  {
+    "serviceId": "svc-5-1",
+    "vendorId": 5,
+    "serviceCategory": "technical-services",
+    "title": "Tap Leakage Repair",
+    "price": 600,
+    "billingType": "per visit",
+    "overview": "Fixing leaking taps and minor plumbing issues.",
+    "workProcess": [
+      "Leak identification",
+      "Washer replacement",
+      "Leak testing"
+    ],
+    "manpower": 1,
+    "timeRange": "45 minutes",
+    "tools": ["Wrench", "Seal tape"],
+    "safetyMeasures": ["Water supply shut-off"],
+    "terms": "Spare parts charged extra."
+  },
+   {
+    "serviceId": "svc-5-2",
+    "vendorId": 5,
+    "serviceCategory": ["technical-services","cleaning"],
+    "title": "Pipe Replacement",
+    "price": 2200,
+    "billingType": "per service",
+    "overview": "Replacement of damaged or leaking pipes.",
+    "workProcess": [
+      "Pipe removal",
+      "New pipe installation",
+      "Pressure testing"
+    ],
+    "manpower": 2,
+    "timeRange": "3 hours",
+    "tools": ["Pipe cutter", "Sealants"],
+    "safetyMeasures": ["Protective gloves"],
+    "terms": "Material cost separate."
+  },
+   {
+    "serviceId": "svc-5-3",
+    "vendorId": 5,
+    "serviceCategory": ["technical-services","maintenance","cleaning"],
+    "title": "Emergency Plumbing",
+    "price": 4000,
+    "billingType": "per visit",
+    "overview": "Urgent plumbing service for major leaks.",
+    "workProcess": [
+      "Emergency inspection",
+      "Temporary fix",
+      "Permanent solution"
+    ],
+    "manpower": 2,
+    "timeRange": "2 hours",
+    "tools": ["Emergency plumbing kit"],
+    "safetyMeasures": ["Area secured"],
+    "terms": "Emergency charges apply."
+  },
+    {
+    "serviceId": "svc-6-1",
+    "vendorId": 6,
+    "serviceCategory": ["maintenance","cleaning"],
+    "title": "Cockroach Control",
+    "price": 1800,
+    "billingType": "per service",
+    "overview": "Effective cockroach treatment for homes.",
+    "workProcess": [
+      "Inspection",
+      "Chemical application",
+      "Follow-up guidance"
+    ],
+    "manpower": 2,
+    "timeRange": "2 hours",
+    "tools": ["Sprayer", "Pesticides"],
+    "safetyMeasures": ["Mask", "Ventilation"],
+    "terms": "Keep children away during service."
+  },
+  {
+    "serviceId": "svc-6-2",
+    "vendorId": 6,
+    "serviceCategory": ["maintenance","cleaning"],
+    "title": "Termite Treatment",
+    "price": 3500,
+    "billingType": "per service",
+    "overview": "Long-lasting termite protection.",
+    "workProcess": [
+      "Soil inspection",
+      "Chemical treatment",
+      "Barrier creation"
+    ],
+    "manpower": 2,
+    "timeRange": "3 hours",
+    "tools": ["Injection tools"],
+    "safetyMeasures": ["Protective clothing"],
+    "terms": "Pets must be removed."
+  },
+  {
+    "serviceId": "svc-6-3",
+    "vendorId": 6,
+    "serviceCategory": ["maintenance","cleaning"],
+    "title": "Annual Pest Protection",
+    "price": 6000,
+    "billingType": "per year",
+    "overview": "Year-round pest protection plan.",
+    "workProcess": [
+      "Multiple treatments",
+      "Routine inspections"
+    ],
+    "manpower": 2,
+    "timeRange": "3 visits/year",
+    "tools": ["Professional pest control tools"],
+    "safetyMeasures": ["Eco-friendly chemicals"],
+    "terms": "Scheduled visits only."
+  },
+{
+    "serviceId": "svc-7-1",
+    "vendorId": 7,
+    "serviceCategory": "personal-care",
+    "title": "Hourly Babysitting",
+    "price": 500,
+    "billingType": "per hour",
+    "overview": "Short-term babysitting service.",
+    "workProcess": [
+      "Child supervision",
+      "Playtime activities",
+      "Meal assistance"
+    ],
+    "manpower": 1,
+    "timeRange": "1 hour",
+    "tools": ["Toys", "First-aid kit"],
+    "safetyMeasures": ["Verified sitter"],
+    "terms": "Parents must provide baby essentials."
+  },
+  {
+    "serviceId": "svc-7-2",
+    "vendorId": 7,
+    "serviceCategory": "personal-care",
+    "title": "Full Day Childcare",
+    "price": 3000,
+    "billingType": "per day",
+    "overview": "Full-day babysitting and care.",
+    "workProcess": [
+      "All-day supervision",
+      "Meals and rest time",
+      "Activity planning"
+    ],
+    "manpower": 1,
+    "timeRange": "10 hours",
+    "tools": ["Activity kits"],
+    "safetyMeasures": ["Background-checked sitter"],
+    "terms": "Overtime charged extra."
+  },
+  {
+    "serviceId": "svc-7-3",
+    "vendorId": 7,
+    "serviceCategory": "personal-care",
+    "title": "Weekly Babysitting Plan",
+    "price": 12000,
+    "billingType": "per week",
+    "overview": "Fixed babysitter for a full week.",
+    "workProcess": [
+      "Daily childcare",
+      "Routine maintenance",
+      "Daily reports"
+    ],
+    "manpower": 1,
+    "timeRange": "5 days",
+    "tools": ["Daily activity planner"],
+    "safetyMeasures": ["Consistent caregiver"],
+    "terms": "Advance booking required."
+  },
+  {
+    "serviceId": "svc-8-1",
+    "vendorId": 8,
+    "serviceCategory": "renovation",
+    "title": "Room Remodeling",
+    "price": 12000,
+    "billingType": "per project",
+    "overview": "Complete remodeling of a single room.",
+    "workProcess": [
+      "Design planning",
+      "Material setup",
+      "Renovation work",
+      "Final inspection"
+    ],
+    "manpower": 3,
+    "timeRange": "3 days",
+    "tools": ["Construction tools"],
+    "safetyMeasures": ["Site safety compliance"],
+    "terms": "Advance payment required."
+  },
+  {
+    "serviceId": "svc-8-2",
+    "vendorId": 8,
+    "serviceCategory": "renovation",
+    "title": "Carpentry Work",
+    "price": 4500,
+    "billingType": "per project",
+    "overview": "Furniture repair and custom carpentry.",
+    "workProcess": [
+      "Measurement",
+      "Cutting & fitting",
+      "Finishing"
+    ],
+    "manpower": 2,
+    "timeRange": "1 day",
+    "tools": ["Carpentry tools"],
+    "safetyMeasures": ["Protective gear"],
+    "terms": "Material cost separate."
+  },
+  {
+    "serviceId": "svc-8-3",
+    "vendorId": 8,
+     "serviceCategory": ["renovation","technical-services"],
+    "title": "Full Home Renovation",
+    "price": 50000,
+    "billingType": "per project",
+    "overview": "Complete home renovation solution.",
+    "workProcess": [
+      "Interior planning",
+      "Structural work",
+      "Finishing & handover"
+    ],
+    "manpower": 5,
+    "timeRange": "15 days",
+    "tools": ["Heavy renovation tools"],
+    "safetyMeasures": ["On-site supervision"],
+    "terms": "Timeline may vary based on workload."
+  },
+  {
+    "serviceId": "svc-9-1",
+    "vendorId": 9,
+    "serviceCategory": "renovation",
+    "title": "Room Painting",
+    "price": 3000,
+    "billingType": "per room",
+    "overview": "Professional interior room painting service.",
+    "workProcess": [
+      "Wall inspection",
+      "Surface preparation",
+      "Primer application",
+      "Final paint coating"
+    ],
+    "manpower": 2,
+    "timeRange": "1 day",
+    "tools": ["Paint rollers", "Brushes", "Drop sheets"],
+    "safetyMeasures": ["Mask", "Ventilation"],
+    "terms": "Crack repair charged separately."
+  },
+  {
+    "serviceId": "svc-9-2",
+    "vendorId": 9,
+     "serviceCategory": "renovation",
+    "title": "Full House Painting",
+    "price": 9000,
+    "billingType": "per house",
+    "overview": "Interior and exterior painting for full houses.",
+    "workProcess": [
+      "Color consultation",
+      "Surface preparation",
+      "Interior & exterior painting",
+      "Final finishing"
+    ],
+    "manpower": 3,
+    "timeRange": "3 days",
+    "tools": ["Spray machine", "Paint tools"],
+    "safetyMeasures": ["Protective gear"],
+    "terms": "Drying time required between coats."
+  },
+  {
+    "serviceId": "svc-9-3",
+    "vendorId": 9,
+    "serviceCategory": "renovation",
+    "title": "Luxury Texture Painting",
+    "price": 15000,
+    "billingType": "per house",
+    "overview": "Designer texture and premium paint finishes.",
+    "workProcess": [
+      "Design discussion",
+      "Texture preparation",
+      "Premium coating",
+      "Final inspection"
+    ],
+    "manpower": 3,
+    "timeRange": "4 days",
+    "tools": ["Texture tools", "Premium paints"],
+    "safetyMeasures": ["Material safety compliance"],
+    "terms": "Design approval required before work."
+  },
+  {
+    "serviceId": "svc-10-1",
+    "vendorId": 10,
+     "serviceCategory": "cleaning",
+    "title": "Window Glass Cleaning",
+    "price": 1200,
+    "billingType": "per service",
+    "overview": "Streak-free cleaning for home windows.",
+    "workProcess": [
+      "Glass inspection",
+      "Dust removal",
+      "Wet cleaning",
+      "Polishing"
+    ],
+    "manpower": 1,
+    "timeRange": "1 hour",
+    "tools": ["Glass cleaner", "Squeegee"],
+    "safetyMeasures": ["Gloves", "Safety harness (if needed)"],
+    "terms": "Outdoor access required."
+  },
+  {
+    "serviceId": "svc-10-2",
+    "vendorId": 10,
+    "serviceCategory": ["renovation","maintenance"],
+    "title": "Full Glass Service",
+    "price": 3500,
+    "billingType": "per service",
+    "overview": "Cleaning of all windows, mirrors, and glass doors.",
+    "workProcess": [
+      "All glass inspection",
+      "Deep cleaning",
+      "Scratch removal (minor)",
+      "Final polish"
+    ],
+    "manpower": 2,
+    "timeRange": "3 hours",
+    "tools": ["Professional glass tools"],
+    "safetyMeasures": ["Protective gloves"],
+    "terms": "Pre-damaged glass not covered."
+  },
+  {
+    "serviceId": "svc-10-3",
+    "vendorId": 10,
+    "serviceCategory": ["renovation","cleaning","technical-services"],
+    "title": "Glass Installation & Repair",
+    "price": 7000,
+    "billingType": "per service",
+    "overview": "Installation and repair of window and door glass.",
+    "workProcess": [
+      "Measurement",
+      "Glass fitting",
+      "Sealing and safety check"
+    ],
+    "manpower": 2,
+    "timeRange": "4 hours",
+    "tools": ["Glass cutting tools"],
+    "safetyMeasures": ["Safety goggles"],
+    "terms": "Glass cost charged separately."
+  },
+  {
+    "serviceId": "svc-11-1",
+    "vendorId": 11,
+     "serviceCategory": ["renovation","maintenance"],
+    "title": "Furniture Assembly",
+    "price": 900,
+    "billingType": "per service",
+    "overview": "Assembly of household furniture.",
+    "workProcess": [
+      "Parts inspection",
+      "Assembly",
+      "Stability check"
+    ],
+    "manpower": 1,
+    "timeRange": "1 hour",
+    "tools": ["Basic hand tools"],
+    "safetyMeasures": ["Proper lifting techniques"],
+    "terms": "Complex furniture may take longer."
+  },
+  {
+    "serviceId": "svc-11-2",
+    "vendorId": 11,
+    "serviceCategory": "renovation",
+    "title": "General Repair Service",
+    "price": 1600,
+    "billingType": "per visit",
+    "overview": "Minor household repairs and installations.",
+    "workProcess": [
+      "Issue identification",
+      "Repair work",
+      "Final testing"
+    ],
+    "manpower": 1,
+    "timeRange": "2 hours",
+    "tools": ["Repair toolkit"],
+    "safetyMeasures": ["Safety gloves"],
+    "terms": "Spare parts not included."
+  },
+  {
+    "serviceId": "svc-11-3",
+    "vendorId": 11,
+    "serviceCategory": ["renovation","maintenance"],
+    "title": "Full Day Handyman Support",
+    "price": 4000,
+    "billingType": "per day",
+    "overview": "Multiple repair tasks in one day.",
+    "workProcess": [
+      "Task planning",
+      "Multiple repairs",
+      "Completion report"
+    ],
+    "manpower": 1,
+    "timeRange": "8 hours",
+    "tools": ["Complete handyman kit"],
+    "safetyMeasures": ["Worksite safety"],
+    "terms": "Task list must be provided earlier."
+  },
+
+  {
+    "serviceId": "svc-12-1",
+    "vendorId": 12,
+    "serviceCategory": "technical-services",
+    "title": "Emergency Door Unlocking",
+    "price": 1000,
+    "billingType": "per service",
+    "overview": "Quick and damage-free door unlocking service.",
+    "workProcess": [
+      "Lock inspection",
+      "Unlocking procedure",
+      "Safety verification"
+    ],
+    "manpower": 1,
+    "timeRange": "30 minutes",
+    "tools": ["Lock-picking tools"],
+    "safetyMeasures": ["Identity verification"],
+    "terms": "No refund after unlocking."
+  },
+  {
+    "serviceId": "svc-12-2",
+    "vendorId": 12,
+    "serviceCategory": ["renovation","technical-services"],
+    "title": "Lock Replacement",
+    "price": 2500,
+    "billingType": "per service",
+    "overview": "Replacement of damaged or old locks.",
+    "workProcess": [
+      "Old lock removal",
+      "New lock installation",
+      "Testing"
+    ],
+    "manpower": 1,
+    "timeRange": "1 hour",
+    "tools": ["Lock installation tools"],
+    "safetyMeasures": ["Proof of ownership required"],
+    "terms": "Hardware cost separate."
+  },
+  {
+    "serviceId": "svc-12-3",
+    "vendorId": 12,
+    "serviceCategory": ["renovation","maintenance","technical-services"],
+    "title": "Security Upgrade Service",
+    "price": 4500,
+    "billingType": "per service",
+    "overview": "Upgrade home security with high-grade locks.",
+    "workProcess": [
+      "Security assessment",
+      "High-security lock installation",
+      "Final testing"
+    ],
+    "manpower": 1,
+    "timeRange": "1.5 hours",
+    "tools": ["Advanced lock tools"],
+    "safetyMeasures": ["Customer identity verification"],
+    "terms": "Ownership proof mandatory."
+  }
+]

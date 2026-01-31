@@ -1,0 +1,113 @@
+[
+  {
+    "vendorId": 1,
+    "serviceKey": ["house-cleaning"],
+    "image": "https://img.freepik.com/premium-vector/cleaning-service-logo-icon-design-illustration_586739-5831.jpg",
+    "name": "Sparkle Home Care",
+    "service": "House Cleaning",
+    "shortDescription": "Reliable deep and regular cleaning services for homes and apartments.",
+    "categories": ["discount", "top-purchased"],
+    "discount": 25
+  },
+  {
+    "vendorId": 2,
+    "serviceKey": ["electrician"],
+    "image": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/electrician-logo%2Celectrician-service-logo-fre-design-template-b812985d25cb91f7990892d54f483f9a_screen.jpg",
+    "name": "PowerFix Electricians",
+    "service": "Electrical Repairs & Installation",
+    "shortDescription": "Certified electricians handling wiring and appliance issues safely.",
+    "categories": ["hot-deal", "top-purchased"]
+  },
+  {
+    "vendorId": 3,
+    "serviceKey": ["gas-technician"],
+    "image": "https://img.freepik.com/premium-vector/mechanic-logo-isolated-white_1143026-1566.jpg",
+    "name": "CoolMan Technician",
+    "service": "Gas Stove Repair",
+    "shortDescription": "Fast and safe gas stove troubleshooting and maintenance.",
+    "categories": ["top-purchased"]
+  },
+  {
+    "vendorId": 4,
+    "serviceKey": ["ac-repair"],
+    "image": "https://img.freepik.com/premium-vector/set-heating-cooling-logos-repair-services-air-conditioner-design-vector_150826-263.jpg",
+    "name": "CoolCare Services",
+    "service": "AC Service & Repair",
+    "shortDescription": "AC cleaning, installation, and performance tuning.",
+    "categories": ["discount"],
+    "discount": 35
+  },
+  {
+    "vendorId": 5,
+    "serviceKey": ["plumbing"],
+    "image": "https://images-platform.99static.com//E61Vc9LSAuptiB7UOTuWVMk9qOc=/240x50:761x571/fit-in/590x590/99designs-contests-attachments/61/61795/attachment_61795718",
+    "name": "Bryan Marr Plumbing, LLC",
+    "service": "Plumbing",
+    "shortDescription": "Leak fixing, pipe installation, and emergency repairs.",
+    "categories": ["hot-deal"]
+  },
+  {
+    "vendorId": 6,
+    "serviceKey": ["pest-control"],
+    "image": "https://img.freepik.com/premium-vector/handdrawn-pest-control-logo-design-vector-illustration_373791-2691.jpg",
+    "name": "SafeHome Pest Control",
+    "service": "Pest Control",
+    "shortDescription": "Eco-friendly pest treatment for cockroaches and termites.",
+    "categories": ["top-purchased"]
+  },
+  {
+    "vendorId": 7,
+    "serviceKey": ["babysitter"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWz1wOUFro8lxGH-UevO5iipQQIXFjf34yow&s",
+    "name": "LittleCare Babysitting",
+    "service": "Babysitter & Childcare",
+    "shortDescription": "Verified and experienced babysitters available hourly.",
+    "categories": ["featured"]
+  },
+  {
+    "vendorId": 8,
+    "serviceKey": ["renovation"],
+    "image": "https://img.freepik.com/premium-vector/home-renovation-logo-concept-company-branding_1012729-17188.jpg",
+    "name": "Renovator's Pro",
+    "service": "Home Renovation",
+    "shortDescription": "Design, remodeling, painting and carpentry.",
+    "categories": ["discount"],
+    "discount": 15
+  },
+  {
+    "vendorId": 9,
+    "serviceKey": ["painting"],
+    "image": "https://cdn.dribbble.com/userupload/28196576/file/original-89a512777acd50ccb74f1d2b74de8598.jpg",
+    "name": "Dhaka Painters",
+    "service": "Painting",
+    "shortDescription": "Professional interior and exterior painting.",
+    "categories": ["featured"]
+  },
+  {
+    "vendorId": 10,
+    "serviceKey": ["window-glass-technician"],
+    "image": "https://img.freepik.com/free-vector/flat-design-glass-logo-template_23-2149008971.jpg",
+    "name": "Shine & Glass",
+    "service": "Window & Glass Installation, Repair & Cleaning",
+    "shortDescription": "Streak-free glass cleaning for homes and offices.",
+    "categories": ["featured"]
+  },
+  {
+    "vendorId": 11,
+    "serviceKey": ["handyman"],
+    "image": "https://img.freepik.com/premium-psd/man-with-hat-his-head-is-holding-gun_1333771-6594.jpg",
+    "name": "FixIt Handyman",
+    "service": "Handyman & General Repairs",
+    "shortDescription": "Quick repairs and furniture assembly.",
+    "categories": ["top-purchased"]
+  },
+  {
+    "vendorId": 12,
+    "serviceKey": ["locksmith"],
+    "image": "https://img.freepik.com/free-vector/flat-design-locksmith-character_23-2147728073.jpg",
+    "name": "Secure Locks",
+    "service": "Locksmith",
+    "shortDescription": "Emergency door unlocking and lock replacement.",
+    "categories": ["featured"]
+  }
+]

@@ -1,0 +1,445 @@
+[
+  {
+    "vendorId": 1,
+    "name": "Sparkle Home Care",
+    "service": "House Cleaning",
+    "shortDescription": "Reliable deep and regular cleaning services for homes and apartments.",
+    "banner": "/images/vendors/banner1.jpg",
+    "profile": "/images/vendors/profile1.jpg",
+    "ads": ["25% OFF Deep Cleaning", "Festival Offer — FREE Kitchen Cleaning"],
+    "servicePackages": [
+      {
+        "title": "Basic Plan",
+        "tagline": "Ideal for small apartments",
+        "price": 1200,
+        "duration": "per service",
+        "features": ["General room cleaning", "1 cleaner", "2 hours service"],
+        "highlight": false
+      },
+      {
+        "title": "Standard Plan",
+        "tagline": "Most popular choice",
+        "price": 3200,
+        "duration": "per service",
+        "features": ["Deep cleaning", "Kitchen + washroom", "2 cleaners", "5 hours service"],
+        "highlight": true
+      },
+      {
+        "title": "Premium Plan",
+        "tagline": "Complete home care",
+        "price": 5000,
+        "duration": "per service",
+        "features": ["All rooms deep clean", "Priority service", "Free inspection"],
+        "highlight": false
+      }
+    ],
+    "terms": "1. Service charges are non-refundable.\n2. Extra services charged separately.\n3. Time may vary based on workload."
+  },
+
+  {
+    "vendorId": 2,
+    "name": "PowerFix Electricians",
+    "service": "Electrical Repairs & Installation",
+    "shortDescription": "Certified electricians handling wiring and appliance issues safely.",
+    "banner": "/images/vendors/banner2.jpg",
+    "profile": "/images/vendors/profile2.jpg",
+    "ads": ["Free wiring safety check", "10% OFF fan installation"],
+    "servicePackages": [
+      {
+        "title": "Basic Repair",
+        "tagline": "Small fixes",
+        "price": 900,
+        "duration": "per visit",
+        "features": ["Switch & socket repair", "1 electrician", "1 hour"],
+        "highlight": false
+      },
+      {
+        "title": "Standard Service",
+        "tagline": "Home safety focused",
+        "price": 2500,
+        "duration": "per visit",
+        "features": ["Full wiring check", "2 electricians", "Safety report"],
+        "highlight": true
+      },
+      {
+        "title": "Premium Install",
+        "tagline": "Large installations",
+        "price": 4500,
+        "duration": "per visit",
+        "features": ["Appliance install", "Load testing", "Warranty support"],
+        "highlight": false
+      }
+    ],
+    "terms": "1. Spare parts charged separately.\n2. Customer must provide safe access."
+  },
+
+  {
+    "vendorId": 3,
+    "name": "CoolMan Technician",
+    "service": "Gas Stove Repair",
+    "shortDescription": "Fast and safe gas stove troubleshooting and maintenance.",
+    "banner": "/images/vendors/banner3.jpg",
+    "profile": "/images/vendors/profile3.jpg",
+    "ads": ["Emergency same-day service", "Free safety check"],
+    "servicePackages": [
+      {
+        "title": "Cleaning Plan",
+        "tagline": "Basic maintenance",
+        "price": 700,
+        "duration": "per service",
+        "features": ["Burner cleaning", "Gas flow check"],
+        "highlight": false
+      },
+      {
+        "title": "Repair Plan",
+        "tagline": "Fix common issues",
+        "price": 1800,
+        "duration": "per service",
+        "features": ["Full diagnosis", "Leak fixing", "Safety assurance"],
+        "highlight": true
+      },
+      {
+        "title": "Annual Care",
+        "tagline": "Long-term safety",
+        "price": 3000,
+        "duration": "per year",
+        "features": ["2 visits/year", "Priority support"],
+        "highlight": false
+      }
+    ],
+    "terms": "1. Gas cylinder handled by customer.\n2. Parts replacement costs extra."
+  },
+
+  {
+    "vendorId": 4,
+    "name": "CoolCare Services",
+    "service": "AC Service & Repair",
+    "shortDescription": "AC cleaning, installation, and performance tuning.",
+    "banner": "/images/vendors/banner4.jpg",
+    "profile": "/images/vendors/profile4.jpg",
+    "ads": ["35% OFF Seasonal AC Service"],
+    "servicePackages": [
+      {
+        "title": "Cleaning Plan",
+        "tagline": "Regular AC care",
+        "price": 1500,
+        "duration": "per service",
+        "features": ["Filter cleaning", "Indoor wash"],
+        "highlight": false
+      },
+      {
+        "title": "Standard Service",
+        "tagline": "Best value",
+        "price": 3000,
+        "duration": "per service",
+        "features": ["Gas check", "Leak detection", "Performance tuning"],
+        "highlight": true
+      },
+      {
+        "title": "Premium Care",
+        "tagline": "Complete AC solution",
+        "price": 5500,
+        "duration": "per service",
+        "features": ["Gas refill", "Deep cleaning", "Warranty support"],
+        "highlight": false
+      }
+    ],
+    "terms": "1. Outdoor unit must be accessible.\n2. Parts cost extra."
+  },
+
+  {
+    "vendorId": 5,
+    "name": "Bryan Marr Plumbing, LLC",
+    "service": "Plumbing",
+    "shortDescription": "Leak fixing, pipe installation, and emergency plumbing repairs.",
+    "banner": "/images/vendors/banner5.jpg",
+    "profile": "/images/vendors/profile5.jpg",
+    "ads": ["Free leak inspection"],
+    "servicePackages": [
+      {
+        "title": "Leak Fix",
+        "tagline": "Small repairs",
+        "price": 600,
+        "duration": "per visit",
+        "features": ["Tap & joint repair"],
+        "highlight": false
+      },
+      {
+        "title": "Standard Plumbing",
+        "tagline": "Most booked",
+        "price": 2200,
+        "duration": "per visit",
+        "features": ["Pipe replacement", "Drain cleaning"],
+        "highlight": true
+      },
+      {
+        "title": "Emergency Service",
+        "tagline": "Urgent support",
+        "price": 4000,
+        "duration": "per visit",
+        "features": ["24/7 service", "Priority arrival"],
+        "highlight": false
+      }
+    ],
+    "terms": "1. No warranty on old pipelines.\n2. Parts charged separately."
+  },
+
+  {
+    "vendorId": 6,
+    "name": "SafeHome Pest Control",
+    "service": "Pest Control",
+    "shortDescription": "Eco-friendly pest treatment for cockroaches and termites.",
+    "banner": "/images/vendors/banner6.jpg",
+    "profile": "/images/vendors/profile6.jpg",
+    "ads": ["Free consultation"],
+    "servicePackages": [
+      {
+        "title": "Cockroach Control",
+        "tagline": "Indoor protection",
+        "price": 1800,
+        "duration": "per service",
+        "features": ["Odor-free treatment", "Safe chemicals"],
+        "highlight": false
+      },
+      {
+        "title": "Termite Protection",
+        "tagline": "Long-term safety",
+        "price": 3500,
+        "duration": "per service",
+        "features": ["Soil treatment", "6-month warranty"],
+        "highlight": true
+      },
+      {
+        "title": "Annual Shield",
+        "tagline": "Complete pest solution",
+        "price": 6000,
+        "duration": "per year",
+        "features": ["Multiple visits", "Priority service"],
+        "highlight": false
+      }
+    ],
+    "terms": "1. Pets must be removed during treatment.\n2. Ventilation required."
+  },
+
+  {
+    "vendorId": 7,
+    "name": "LittleCare Babysitting",
+    "service": "Babysitter & Childcare",
+    "shortDescription": "Verified and experienced babysitters available hourly.",
+    "banner": "/images/vendors/banner7.jpg",
+    "profile": "/images/vendors/profile7.jpg",
+    "ads": ["Certified babysitters only"],
+    "servicePackages": [
+      {
+        "title": "Hourly Care",
+        "tagline": "Short-term help",
+        "price": 500,
+        "duration": "per hour",
+        "features": ["Verified sitter", "Safe care"],
+        "highlight": false
+      },
+      {
+        "title": "Day Care",
+        "tagline": "Full-day support",
+        "price": 3000,
+        "duration": "per day",
+        "features": ["Meals supervision", "Playtime", "10 hours care"],
+        "highlight": true
+      },
+      {
+        "title": "Weekly Plan",
+        "tagline": "Working parents",
+        "price": 12000,
+        "duration": "per week",
+        "features": ["Fixed sitter", "Daily updates"],
+        "highlight": false
+      }
+    ],
+    "terms": "1. Parents must provide baby essentials.\n2. Overtime charged extra."
+  },
+
+  {
+    "vendorId": 8,
+    "name": "Renovator's Pro",
+    "service": "Home Renovation",
+    "shortDescription": "Design, remodeling, painting and carpentry services.",
+    "banner": "/images/vendors/banner8.jpg",
+    "profile": "/images/vendors/profile8.jpg",
+    "ads": ["15% OFF wall painting"],
+    "servicePackages": [
+      {
+        "title": "Basic Renovation",
+        "tagline": "Small upgrades",
+        "price": 12000,
+        "duration": "per project",
+        "features": ["Room remodeling", "Design support"],
+        "highlight": false
+      },
+      {
+        "title": "Standard Package",
+        "tagline": "Most popular",
+        "price": 25000,
+        "duration": "per project",
+        "features": ["Painting + carpentry", "Material planning"],
+        "highlight": true
+      },
+      {
+        "title": "Premium Interior",
+        "tagline": "Luxury finish",
+        "price": 50000,
+        "duration": "per project",
+        "features": ["Full interior", "Custom design"],
+        "highlight": false
+      }
+    ],
+    "terms": "1. Advance payment required.\n2. Material cost separate."
+  },
+
+  {
+    "vendorId": 9,
+    "name": "Dhaka Painters",
+    "service": "Painting",
+    "shortDescription": "Professional interior and exterior painting services.",
+    "banner": "/images/vendors/banner9.jpg",
+    "profile": "/images/vendors/profile9.jpg",
+    "ads": ["Free color consultation"],
+    "servicePackages": [
+      {
+        "title": "Room Painting",
+        "tagline": "Single room",
+        "price": 3000,
+        "duration": "per room",
+        "features": ["Premium paint", "Clean finish"],
+        "highlight": false
+      },
+      {
+        "title": "Full House",
+        "tagline": "Best value",
+        "price": 9000,
+        "duration": "per house",
+        "features": ["Interior + exterior", "Weather-proof"],
+        "highlight": true
+      },
+      {
+        "title": "Luxury Paint",
+        "tagline": "Designer finish",
+        "price": 15000,
+        "duration": "per house",
+        "features": ["Texture paint", "Premium colors"],
+        "highlight": false
+      }
+    ],
+    "terms": "1. Wall cracks repaired separately.\n2. Drying time required."
+  },
+
+  {
+    "vendorId": 10,
+    "name": "Shine & Glass",
+    "service": "Window & Glass Services",
+    "shortDescription": "Professional glass installation, repair & cleaning.",
+    "banner": "/images/vendors/banner10.jpg",
+    "profile": "/images/vendors/profile10.jpg",
+    "ads": ["Office package discount"],
+    "servicePackages": [
+      {
+        "title": "Window Cleaning",
+        "tagline": "Homes",
+        "price": 1200,
+        "duration": "per service",
+        "features": ["Streak-free cleaning"],
+        "highlight": false
+      },
+      {
+        "title": "Full Glass Care",
+        "tagline": "Most booked",
+        "price": 3500,
+        "duration": "per service",
+        "features": ["Windows + mirrors", "Polishing"],
+        "highlight": true
+      },
+      {
+        "title": "Office Plan",
+        "tagline": "Commercial use",
+        "price": 7000,
+        "duration": "per service",
+        "features": ["Large glass areas", "Priority service"],
+        "highlight": false
+      }
+    ],
+    "terms": "1. Pre-damaged glass not covered.\n2. Outdoor access required."
+  },
+
+  {
+    "vendorId": 11,
+    "name": "FixIt Handyman",
+    "service": "Handyman & General Repairs",
+    "shortDescription": "Quick repairs and furniture assembly.",
+    "banner": "/images/vendors/banner11.jpg",
+    "profile": "/images/vendors/profile11.jpg",
+    "ads": ["Same-day handyman service"],
+    "servicePackages": [
+      {
+        "title": "Quick Fix",
+        "tagline": "Minor jobs",
+        "price": 900,
+        "duration": "per hour",
+        "features": ["Furniture assembly"],
+        "highlight": false
+      },
+      {
+        "title": "Standard Repair",
+        "tagline": "Most popular",
+        "price": 1600,
+        "duration": "per visit",
+        "features": ["General repairs", "Installations"],
+        "highlight": true
+      },
+      {
+        "title": "Full Day Help",
+        "tagline": "Multiple tasks",
+        "price": 4000,
+        "duration": "per day",
+        "features": ["All tasks covered"],
+        "highlight": false
+      }
+    ],
+    "terms": "1. Spare parts not included.\n2. Safety precautions required."
+  },
+
+  {
+    "vendorId": 12,
+    "name": "Secure Locks",
+    "service": "Locksmith",
+    "shortDescription": "Emergency door unlocking and lock replacement services.",
+    "banner": "/images/vendors/banner12.jpg",
+    "profile": "/images/vendors/profile12.jpg",
+    "ads": ["24/7 emergency service"],
+    "servicePackages": [
+      {
+        "title": "Door Unlocking",
+        "tagline": "Emergency help",
+        "price": 1000,
+        "duration": "per service",
+        "features": ["Damage-free unlocking"],
+        "highlight": false
+      },
+      {
+        "title": "Lock Replacement",
+        "tagline": "Most booked",
+        "price": 2500,
+        "duration": "per service",
+        "features": ["High-security lock"],
+        "highlight": true
+      },
+      {
+        "title": "Security Upgrade",
+        "tagline": "Extra safety",
+        "price": 4500,
+        "duration": "per service",
+        "features": ["Multiple locks", "Consultation"],
+        "highlight": false
+      }
+    ],
+    "terms": "1. Proof of ownership required.\n2. Hardware cost separate."
+  }
+]
