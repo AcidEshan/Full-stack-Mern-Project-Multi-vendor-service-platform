@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 // Replace this with your logo
-import logo from "../../Images/logo.png"; // <-- change path if needed
+import logo from "../../Images/Logo.PNG"; // <-- change path if needed
 
 const Footer = () => {
   return (
