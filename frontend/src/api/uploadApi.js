@@ -95,6 +95,6 @@ export const getFileUrl = (fileId) => {
   // If it's a base64 string, return it
   if (fileId.startsWith('data:')) return fileId;
   // Otherwise construct the API URL
-  const baseURL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/v1';
+  const baseURL = import.meta.env.VITE_API_URL || 'https://full-stack-mern-project-multi-vendor.onrender.com/api/v1';
   return `${baseURL}/upload/${fileId}`;
 };

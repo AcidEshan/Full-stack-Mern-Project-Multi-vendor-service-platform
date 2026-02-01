@@ -375,7 +375,7 @@ const UserDashboard = () => {
       if (relativeUrl) {
         // Convert relative URL to absolute URL
         // The relative URL already includes /api/v1, so we only need the base server URL
-        const serverBaseURL = import.meta.env.VITE_SERVER_URL || 'http://localhost:5000';
+        const serverBaseURL = import.meta.env.VITE_SERVER_URL || 'https://full-stack-mern-project-multi-vendor.onrender.com';
         const profilePictureUrl = serverBaseURL + relativeUrl;
         
         // Update the user profile with the new picture (backend uses profileImage field)
