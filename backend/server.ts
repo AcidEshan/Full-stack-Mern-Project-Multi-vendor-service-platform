@@ -32,12 +32,26 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(helmet()); // Security headers
-// Allow origins from environment plus Render frontend domain
-const allowedOrigins = (process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : []).concat(['https://full-stack-mern-project-multi-vendor-0jiy.onrender.com']);
+// Allow origins from environment plus Render frontend domains
+const allowedOrigins = (process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : [])
+  .concat([
+    'https://full-stack-mern-project-multi-vendor-0jiy.onrender.com',
+    'https://full-stack-mern-project-multi-vendor.onrender.com'
+  ]);
+
 app.use(cors({
-  origin: allowedOrigins,
-  credentials: true
+  origin: (origin, callback) => {
+    // Allow requests with no origin (e.g., curl, mobile apps)
+    if (!origin) return callback(null, true);
+    if ((allowedOrigins || []).indexOf(origin) !== -1) return callback(null, true);
+    // Otherwise, block the request — keeping behaviour strict
+    return callback(new Error('Not allowed by CORS'));
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  credentials: true,
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept']
 }));
+
 // Handle preflight requests for CORS
 app.options('*', cors());
 app.use(express.json({ limit: '50mb' })); // Increased limit for file uploads
