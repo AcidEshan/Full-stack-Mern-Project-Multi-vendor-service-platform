@@ -321,12 +321,15 @@ export const emailOrderInvoice = async (
       scheduledTime: order.scheduledTime,
       discount: order.discount || 0,
       couponDiscount: order.couponApplied?.discountAmount || 0,
+      tax: order.tax || 0,
+      platformFee: order.platformFee || 0,
       totalAmount: order.totalAmount,
       paymentMethod: transaction.paymentMethod,
       transactionId: transaction.transactionNumber,
       paymentDate: transaction.completedAt || transaction.createdAt,
       platformCommission: transaction.commissionAmount,
-      vendorAmount: transaction.vendorAmount
+      vendorAmount: transaction.vendorAmount,
+      serviceStatus: order.status || 'completed'
     };
 
     // Generate PDF
@@ -399,7 +402,7 @@ export const getMyInvoices = async (
     })
       .populate('service', 'name')
       .populate('vendor', 'companyName')
-      .sort({ createdAt: -1 })
+      .sort({ createdAt: -1 } as any)
       .skip(skip)
       .limit(Number(limit));
 

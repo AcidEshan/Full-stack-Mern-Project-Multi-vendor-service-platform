@@ -43,7 +43,7 @@ export const getAllVendors = async (req: Request, res: Response, next: NextFunct
     
     const vendors = await Vendor.find(filter)
       .populate('userId', 'firstName lastName email phone isEmailVerified isBlocked isActive')
-      .sort({ createdAt: -1 });
+      .sort({ createdAt: -1 } as any);
     
     res.status(200).json({
       success: true,
@@ -64,7 +64,7 @@ export const getPendingVendors = async (_req: Request, res: Response, next: Next
   try {
     const vendors = await Vendor.find({ approvalStatus: 'pending' })
       .populate('userId', 'firstName lastName email phone isEmailVerified isBlocked isActive')
-      .sort({ createdAt: -1 });
+      .sort({ createdAt: -1 } as any);
     
     res.status(200).json({
       success: true,

@@ -49,6 +49,21 @@ export interface IUser extends Document {
   passwordResetExpires?: Date;
   failedLoginAttempts: number;
   lockUntil?: Date;
+  // Notification preferences
+  notificationPreferences?: {
+    email: {
+      orderUpdates: boolean;
+      paymentUpdates: boolean;
+      reviewNotifications: boolean;
+      promotions: boolean;
+    };
+    push: {
+      orderUpdates: boolean;
+      paymentUpdates: boolean;
+      reviewNotifications: boolean;
+      promotions: boolean;
+    };
+  }; 
   
   // Session Management
   refreshTokens: IRefreshToken[];
@@ -225,6 +240,20 @@ const userSchema = new Schema<IUser>({
   createdBy: {
     type: Schema.Types.ObjectId,
     ref: 'User'
+  },
+  notificationPreferences: {
+    email: {
+      orderUpdates: { type: Boolean, default: true },
+      paymentUpdates: { type: Boolean, default: true },
+      reviewNotifications: { type: Boolean, default: true },
+      promotions: { type: Boolean, default: false }
+    },
+    push: {
+      orderUpdates: { type: Boolean, default: true },
+      paymentUpdates: { type: Boolean, default: true },
+      reviewNotifications: { type: Boolean, default: true },
+      promotions: { type: Boolean, default: false }
+    }
   }
 }, {
   timestamps: true

@@ -229,7 +229,7 @@ export const getAllCoupons = async (req: Request, res: Response, next: NextFunct
     const skip = (Number(page) - 1) * Number(limit);
 
     const coupons = await Coupon.find(filter)
-      .sort({ createdAt: -1 })
+      .sort({ createdAt: -1 } as any)
       .skip(skip)
       .limit(Number(limit))
       .populate('createdBy', 'firstName lastName email');

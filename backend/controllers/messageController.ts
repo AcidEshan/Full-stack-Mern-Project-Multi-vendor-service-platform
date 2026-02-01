@@ -88,7 +88,7 @@ export const getConversation = async (req: Request, res: Response, next: NextFun
       })
         .populate('senderId', 'firstName lastName profileImage role')
         .populate('recipientId', 'firstName lastName profileImage role')
-        .sort({ createdAt: -1 })
+        .sort({ createdAt: -1 } as any)
         .skip(skip)
         .limit(Number(limit)),
       Message.countDocuments({
@@ -356,7 +356,7 @@ export const searchMessages = async (req: Request, res: Response, next: NextFunc
       })
         .populate('senderId', 'firstName lastName profileImage')
         .populate('recipientId', 'firstName lastName profileImage')
-        .sort({ createdAt: -1 })
+        .sort({ createdAt: -1 } as any)
         .skip(skip)
         .limit(Number(limit)),
       Message.countDocuments({

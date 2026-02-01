@@ -1,9 +1,9 @@
 import { Transaction, TransactionStatus } from '../models/Transaction';
 import { Order, OrderStatus } from '../models/Order';
-import { User } from '../models/User';
-import { Vendor } from '../models/Vendor';
+import User from '../models/User';
+import Vendor from '../models/Vendor';
 import { Review } from '../models/Review';
-import { Service } from '../models/Service';
+import Service from '../models/Service';
 
 export interface RevenueReport {
   period: {
@@ -103,7 +103,7 @@ export const generateRevenueReport = async (
   const pending = transactions.filter(t => t.status === TransactionStatus.PENDING);
 
   const totalRevenue = successful.reduce((sum, t) => sum + t.amount, 0);
-  const platformCommission = successful.reduce((sum, t) => sum + t.platformCommission, 0);
+  const platformCommission = successful.reduce((sum, t) => sum + ((t as any).platformCommission || 0), 0);
   const vendorEarnings = successful.reduce((sum, t) => sum + t.vendorAmount, 0);
 
   // Top vendors
@@ -409,7 +409,7 @@ export const generateOrderReport = async (
   const completedOrders = orders.filter(o => o.status === OrderStatus.COMPLETED).length;
   const cancelledOrders = orders.filter(o => o.status === OrderStatus.CANCELLED).length;
   const pendingOrders = orders.filter(o => 
-    [OrderStatus.PENDING, OrderStatus.CONFIRMED, OrderStatus.IN_PROGRESS].includes(o.status)
+    [OrderStatus.PENDING, OrderStatus.COMPLETED, OrderStatus.IN_PROGRESS].includes(o.status)
   ).length;
 
   const totalAmount = orders.reduce((sum, o) => sum + o.totalAmount, 0);

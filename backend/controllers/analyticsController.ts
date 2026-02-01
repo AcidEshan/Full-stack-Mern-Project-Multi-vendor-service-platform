@@ -836,7 +836,7 @@ export const downloadVendorReport = async (req: Request, res: Response, next: Ne
     })
       .populate('service', 'name')
       .populate('user', 'firstName lastName email')
-      .sort({ createdAt: -1 });
+      .sort({ createdAt: -1 } as any);
 
     // Get all transactions
     const transactions = await Transaction.find({
@@ -844,7 +844,7 @@ export const downloadVendorReport = async (req: Request, res: Response, next: Ne
       createdAt: { $gte: start, $lte: end }
     })
       .populate('order', 'orderNumber')
-      .sort({ createdAt: -1 });
+      .sort({ createdAt: -1 } as any);
 
     if (format === 'csv') {
       // Generate CSV report

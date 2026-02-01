@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import { Review } from '../models/Review';
 import { Order, OrderStatus } from '../models/Order';
-import { Service } from '../models/Service';
+import Service from '../models/Service';
 import Vendor from '../models/Vendor';
 import mongoose from 'mongoose';
 
@@ -117,7 +117,7 @@ export const getMyReviews = async (req: Request, res: Response, next: NextFuncti
       .populate('service', 'name images')
       .populate('vendor', 'companyName logo')
       .populate('order', 'orderNumber scheduledDate')
-      .sort({ createdAt: -1 })
+      .sort({ createdAt: -1 } as any)
       .skip(skip)
       .limit(Number(limit));
 
@@ -259,7 +259,7 @@ export const getServiceReviews = async (req: Request, res: Response, next: NextF
 
     const reviews = await Review.find(filter)
       .populate('user', 'firstName lastName')
-      .sort(sort)
+      .sort(sort as any)
       .skip(skip)
       .limit(Number(limit));
 
@@ -314,7 +314,7 @@ export const getVendorReviews = async (req: Request, res: Response, next: NextFu
     const reviews = await Review.find(filter)
       .populate('user', 'firstName lastName')
       .populate('service', 'name')
-      .sort(sort)
+      .sort(sort as any)
       .skip(skip)
       .limit(Number(limit));
 
@@ -596,7 +596,7 @@ export const adminGetAllReviews = async (req: Request, res: Response, next: Next
       .populate('vendor', 'companyName email')
       .populate('service', 'name')
       .populate('order', 'orderNumber')
-      .sort({ createdAt: -1 })
+      .sort({ createdAt: -1 } as any)
       .skip(skip)
       .limit(Number(limit));
 

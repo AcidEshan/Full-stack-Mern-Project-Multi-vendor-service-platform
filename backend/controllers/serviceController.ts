@@ -160,7 +160,7 @@ export const getVendorServices = async (req: Request, res: Response, next: NextF
     const [services, total] = await Promise.all([
       Service.find(filter)
         .populate('categoryId', 'name slug icon description')
-        .sort({ createdAt: -1 })
+        .sort({ createdAt: -1 } as any)
         .skip(skip)
         .limit(Number(limit)),
       Service.countDocuments(filter)
@@ -685,7 +685,7 @@ export const adminGetAllServices = async (req: Request, res: Response, next: Nex
           }
         })
         .populate('categoryId', 'name slug icon')
-        .sort({ createdAt: -1 })
+        .sort({ createdAt: -1 } as any)
         .skip(skip)
         .limit(Number(limit)),
       Service.countDocuments(filter)

@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { Notification, NotificationType, NotificationPriority } from '../models/Notification';
-import { User } from '../models/User';
+import User from '../models/User';
 
 // Get all notifications for current user
 export const getMyNotifications = async (req: Request, res: Response, next: NextFunction) => {
@@ -52,7 +52,7 @@ export const getMyNotifications = async (req: Request, res: Response, next: Next
 export const getUnreadCount = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const userId = req.user!._id;
-    const count = await Notification.getUnreadCount(userId.toString());
+    const count = await Notification.countDocuments({ user: userId, isRead: false });
 
     res.status(200).json({
       success: true,
@@ -125,7 +125,8 @@ export const markAllAsRead = async (req: Request, res: Response, next: NextFunct
   try {
     const userId = req.user!._id;
 
-    const modifiedCount = await Notification.markAllAsRead(userId.toString());
+    const result = await Notification.updateMany({ user: userId }, { isRead: true, readAt: new Date() });
+    const modifiedCount = (result as any).modifiedCount || (result as any).nModified || 0;
 
     res.status(200).json({
       success: true,
@@ -310,7 +311,7 @@ export const sendNotificationToUser = async (req: Request, res: Response, next: 
     }
 
     // Create notification
-    const notification = await Notification.createNotification({
+    const notification = await Notification.create({
       user: userId,
       type,
       title,
@@ -346,7 +347,7 @@ export const getAllNotifications = async (req: Request, res: Response, next: Nex
 
     const [notifications, total] = await Promise.all([
       Notification.find(filter)
-        .sort({ createdAt: -1 })
+        .sort({ createdAt: -1 } as any)
         .skip(skip)
         .limit(Number(limit))
         .populate('user', 'name email')

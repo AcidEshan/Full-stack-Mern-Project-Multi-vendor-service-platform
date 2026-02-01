@@ -235,7 +235,7 @@ export const getFavoriteServices = async (req: Request, res: Response, next: Nex
             { path: 'vendorId', select: 'companyName companyLogo rating' }
           ]
         })
-        .sort({ createdAt: -1 })
+        .sort({ createdAt: -1 } as any)
         .skip(skip)
         .limit(Number(limit)),
       Favorite.countDocuments({ userId, type: 'service' })
@@ -273,7 +273,7 @@ export const getFavoriteVendors = async (req: Request, res: Response, next: Next
           path: 'vendorId',
           populate: { path: 'userId', select: 'firstName lastName email phone' }
         })
-        .sort({ createdAt: -1 })
+        .sort({ createdAt: -1 } as any)
         .skip(skip)
         .limit(Number(limit)),
       Favorite.countDocuments({ userId, type: 'vendor' })

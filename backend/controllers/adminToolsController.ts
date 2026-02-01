@@ -1,11 +1,11 @@
 import { Request, Response, NextFunction } from 'express';
-import { User } from '../models/User';
-import { Vendor } from '../models/Vendor';
+import User from '../models/User';
+import Vendor from '../models/Vendor';
 import { Order } from '../models/Order';
-import { Service } from '../models/Service';
+import Service from '../models/Service';
 import { Transaction } from '../models/Transaction';
 import { Review } from '../models/Review';
-import { Category } from '../models/Category';
+import Category from '../models/Category';
 import { Notification } from '../models/Notification';
 import { 
   getSystemHealth, 
@@ -369,21 +369,27 @@ export const getAuditLogs = async (req: Request, res: Response, next: NextFuncti
 
     const skip = (Number(page) - 1) * Number(limit);
 
-    const [transactions, orders, total] = await Promise.all([
+    const [transactions, orders] = await Promise.all([
       Transaction.find(filter)
-        .sort({ createdAt: -1 })
+        .sort({ createdAt: -1 } as any)
         .skip(skip)
         .limit(Number(limit) / 2)
         .populate('user', 'name email')
         .populate('vendor', 'businessName'),
       Order.find(filter)
-        .sort({ createdAt: -1 })
+        .sort({ createdAt: -1 } as any)
         .skip(skip)
         .limit(Number(limit) / 2)
         .populate('user', 'name email')
-        .populate('vendor', 'businessName'),
-      Transaction.countDocuments(filter) + Order.countDocuments(filter)
+        .populate('vendor', 'businessName')
     ]);
+
+    const [totalTransactions, totalOrders] = await Promise.all([
+      Transaction.countDocuments(filter),
+      Order.countDocuments(filter)
+    ]);
+
+    const total = totalTransactions + totalOrders;
 
     const auditLogs = [
       ...transactions.map(t => ({

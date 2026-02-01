@@ -87,7 +87,7 @@ export const getAllUsers = async (req: Request, res: Response, next: NextFunctio
     if (isBlocked !== undefined) filter.isBlocked = isBlocked === 'true';
     if (isActive !== undefined) filter.isActive = isActive === 'true';
     
-    const users = await User.find(filter).sort({ createdAt: -1 });
+    const users = await User.find(filter).sort({ createdAt: -1 } as any);
     
     res.status(200).json({
       success: true,

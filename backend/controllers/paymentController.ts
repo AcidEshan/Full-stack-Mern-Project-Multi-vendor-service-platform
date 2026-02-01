@@ -402,7 +402,7 @@ export const getMyTransactions = async (req: Request, res: Response, next: NextF
     const transactions = await Transaction.find(filter)
       .populate('order', 'orderNumber scheduledDate totalAmount')
       .populate('vendor', 'companyName')
-      .sort({ createdAt: -1 })
+      .sort({ createdAt: -1 } as any)
       .skip(skip)
       .limit(Number(limit));
 
@@ -447,7 +447,7 @@ export const getVendorTransactions = async (req: Request, res: Response, next: N
     const transactions = await Transaction.find(filter)
       .populate('order', 'orderNumber scheduledDate')
       .populate('user', 'firstName lastName email')
-      .sort({ createdAt: -1 })
+      .sort({ createdAt: -1 } as any)
       .skip(skip)
       .limit(Number(limit));
 
@@ -555,7 +555,7 @@ export const adminGetAllTransactions = async (req: Request, res: Response, next:
       .populate('order', 'orderNumber')
       .populate('user', 'firstName lastName email')
       .populate('vendor', 'companyName email')
-      .sort({ createdAt: -1 })
+      .sort({ createdAt: -1 } as any)
       .skip(skip)
       .limit(Number(limit));
 
@@ -840,7 +840,7 @@ export const initSSLCommerzPayment = async (req: Request, res: Response, next: N
       cancel_url: `${backendUrl}/api/v1/payments/sslcommerz/cancel`,
       ipn_url: `${backendUrl}/api/v1/payments/sslcommerz/ipn`,
       shipping_method: 'NO',
-      product_name: order.service?.name || 'Service',
+      product_name: (order.service as any)?.name || 'Service',
       product_category: 'Service',
       product_profile: 'general',
       cus_name: order.customerName,

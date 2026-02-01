@@ -128,7 +128,7 @@ export const getVendorPayouts = async (req: Request, res: Response, next: NextFu
     const skip = (Number(page) - 1) * Number(limit);
 
     const payouts = await Payout.find(filter)
-      .sort({ createdAt: -1 })
+      .sort({ createdAt: -1 } as any)
       .skip(skip)
       .limit(Number(limit));
 

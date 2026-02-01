@@ -1,9 +1,9 @@
 import mongoose from 'mongoose';
 import os from 'os';
-import { User } from '../models/User';
-import { Vendor } from '../models/Vendor';
+import User from '../models/User';
+import Vendor from '../models/Vendor';
 import { Order } from '../models/Order';
-import { Service } from '../models/Service';
+import Service from '../models/Service';
 import { Transaction } from '../models/Transaction';
 
 export interface SystemHealth {
